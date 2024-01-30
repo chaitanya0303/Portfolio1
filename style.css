@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080808;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background-image: url("1kOLZ5.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #080808;
+}
+
+.hero {
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 10px;
+}
+
+/* Responsive logo size */
+.logo {
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    font-family: sans-serif;
+    margin-left: 20px;
+}
+
+.logo::first-letter {
+    font-size: 60px;
+    border: #fff;
+    border-right: transparent;
+    font-family: sans-serif;
+    padding-left: 5px;
+    color: #fd4766;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    position: relative;
+    font-family: sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #fd4766;
+}
+
+nav ul li a::after {
+    content: "";
+    bottom: -6px;
+    left: 0;
+    width: 0;
+    position: absolute;
+    height: 3px;
+    background: #fd4766;
+    transition: .3s;
+}
+
+nav ul li a:hover::after {
+    width: 5%;
+}
+
+.btn {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    background: #fd4766;
+    padding: 10px 30px;
+    border-radius: 50px;
+    display: inline-block;
+    font-family: sans-serif;
+    font-weight: 500;
+    margin-right: 25px;
+    transition: all .4s ease-in-out;
+    border: 2px solid #fd4766;
+    margin-left: 10px;
+}
+
+.btn:hover {
+    background: transparent;
+    color: #fd4766;
+}
+
+.detail {
+    position: absolute;
+    top: 35%;
+    left: 8%;
+}
+
+.detail h1 {
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 70px;
+}
+
+.detail h1 span {
+    color: #fd4766;
+}
+
+.detail p {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+#aboutme {
+    width: 90%;
+    height: 90vh;
+    margin-bottom: 20px;
+    background-image: url("BG14.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    font-size: 16px;
+    margin-left: 10px;
+    flex-direction: column;
+}
+
+.myself h1 {
+    margin: 50px;
+    color: #fd4766;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.myself p {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#myach {
+    width: 100%;
+    height: 100vh;
+    margin-top: 20px; /* You can adjust the value to reduce or increase the gap */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.about header h1 {
+    margin: 50px;
+    color: #fd4766;
+    font-family: sans-serif;
+    font-size: 35px;
+}
+
+.columns {
+    display: grid;
+    grid-template-columns: auto;
+    padding-left: 10px;
+}
+
+.box {
+    height: 200px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.box h2 {
+    color: #fd4766;
+}
+
+.box h4 {
+    color: forestgreen;
+}
+
+.certificates .columns {
+    display: grid;
+    grid-template-columns: auto;
+    padding-left: 10px;
+}
+
+.certificates .box {
+    height: 100px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.certificates .box h2 {
+    color: #fd4766;
+}
+
+.certificates .box h4 {
+    color: forestgreen;
+}
+
+.contact-left {
+    flex-basis: 100%;
+    margin-left: 10px;
+}
+
+.contact-right {
+    flex-basis: 100%;
+    margin-left: 10px;
+}
+
+.contact-left p {
+    margin: 10px;
+    margin-left: 10px;
+}
+
+.contact-left p i {
+    color: #ff004f;
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.social-icons {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-left: 10px;
+    color: #ababab;
+    display: inline-block;
+}
+
+.btn {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    background: #fd4766;
+    padding: 10px 30px;
+    border-radius: 50px;
+    display: inline-block;
+    font-family: san;
+    font-weight: 500;
+    margin-left: 10px;
+    transition: all .4s ease-in-out;
+    border: 2px solid #fd4766;
+}
+
+.btn:hover {
+    background: transparent;
+    color: #fd4766;
+    margin-left: 10px;
+}
+
+.contact-right form {
+    width: 100%;
+    margin-left: 10px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    margin-left: 10px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .btn2 {
+    padding: 14px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+    .hero {
+        height: auto;
+        text-align: center;
+    }
+
+    .detail {
+        position: static;
+        top: auto;
+        left: auto;
+    }
+
+    .detail h1 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .detail p {
+        font-size: 16px;
+    }
+
+    #aboutme,
+    #myach {
+        height: auto;
+    }
+
+    .myself h1,
+    .about header h1 {
+        font-size: 24px;
+        margin: 20px;
+    }
+
+    .columns {
+        grid-template-columns: 1fr;
+    }
+
+    .box {
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .box h2,
+    .certificates .box h2 {
+        font-size: 20px;
+    }
+
+    .box h4,
+    .certificates .box h4 {
+        font-size: 16px;
+    }
+
+    .contact-left,
+    .contact-right {
+        flex-basis: 100%;
+    }
+
+    .social-icons a {
+        font-size: 24px;
+    }
+
+    .btn {
+        margin: 10px 0;
+    }
+}
